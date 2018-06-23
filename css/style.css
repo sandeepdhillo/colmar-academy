@@ -1,30 +1,38 @@
 body ,  html{
   font-size: 16px;
-  background: white;
-  font-family: helvetica;
+  background: whitesmoke;
+  font-family: 'Roboto', sans-serif;
 }
-header{
-  /* background: red; */
+header {
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
   height:4rem;
   margin-bottom: 0;
 }
-.head{
-  height:4.5rem;
-  margin-bottom: 0px;
+.bold{
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 1rem;
+  left: 4.5rem;
+  /* padding-bottom: 1rem; */
+  /* margin-bottom: 1rem; */
 }
-header span{
-  position: relative;
-  bottom: 2.2rem;
+.light{
+  position: absolute;
+  top: 1rem;
+  left: 13rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: lightgray;
+  /* padding-bottom: 2rem; */
+  /* margin-bottom: 2rem; */
 }
-header  ul {
-  display: inline-block;
-  float:right;
-  position: relative;
-  bottom: 3.5rem;
-}
+
 header  ul li{
   display: inline-block;
-  float:right;
   padding: 1rem;
   }
 header  ul li a{
@@ -32,7 +40,12 @@ header  ul li a{
   text-decoration: none;
 }
 .logo {
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 1.5rem;
+  height: 3rem;
+}
+.logo img{
+  height: 3rem;
+  font-weight: 900;
 }
 .banner{
   margin-top: 0;
@@ -188,28 +201,77 @@ color: gray;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  height: 50px;
+  height: 25px;
   padding: 2rem 0;
   display: block;
 }
 #thesis{
   display:flex;
   justify-content: space-around;
-  align-items: center;
+  align-items:stretch;
 }
 .thesis-main{
-  width: 60%;
+  flex-basis:  60%;
   padding: 1rem;
 
 }
+.thesis-main h2,p{
+  float: left;
+
+}
+
 .thesis-side{
-  width:40%;
+  flex-basis: 40% ;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+
 
 }
 .thesis-prisma , .thesis-now{
-  width:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.thesis-prisma  h3,.thesis-now h3{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.thesis-prisma  p,.thesis-now p{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.thesis-now img,.thesis-prisma img{
+   width:35%;
+   height: auto;
+   padding: 2rem;
+
+}
+.thesis-now .img-side,.thesis-prisma .img-side{
+   width:65%;
+ }
+ .copy-right {
+  float: left;
+  padding-top:1rem;
+  padding-left: 1.5rem;
+  font-weight: lighter;
+}
+footer{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.social{
+  float: right;
+  font-weight: lighter;
+  font-size: 0.5rem;
+}
+.social p{
+  padding: 0.5rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
 }
