@@ -11,20 +11,21 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
   </head>
   <body>
+    <!-- Header Section -->
     <header >
       <div class="logo" role="presentation">
         <img src="resources/images/ic-logo.svg" alt="logo">
         <span class="bold">COLMAR</span>
         <span class="light"> ACADEMY</span>
       </div>
-      <nav role="presentation">
-        <ul>
+
+        <ul role="presentation">
           <li><a href="#">On Campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For Companies</a></li>
           <li><a href="#">Sign In</a></li>
         </ul>
-      </nav>
+      
       <div class="mobile-nav">
         <img src="resources/images/ic-logo.svg" alt="logo">
         <img src="resources/images/ic-on-campus.svg" alt="logo">
@@ -32,6 +33,7 @@
         <img src="resources/images/ic-login.svg" alt="logo">
       </div>
     </header>
+    <!-- banner Section -->
     <div class="banner" role="banner">
       <div class="image-content">
         <img src="resources/images/banner.jpg" alt="banner image">
@@ -42,6 +44,7 @@
         <p>Start Here</p>
       </div>
     </div>
+    <!-- Main Section -->
     <div class="flex-container" role="presentation">
       <div class="info-main"  role="presentation">
         <img src="resources/images/information-main.jpg" alt="main information">
@@ -50,7 +53,7 @@
         <p>Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <div class="addl-info" role="presentation">
-        <div id="main"  role="presentation">
+        <div class="main"  role="presentation">
           <img src="resources/images/information-orientation.jpg" alt="orientation information">
           <div class="content">
             <h3>Orientation date</h3>
@@ -58,7 +61,7 @@
             <p><a href="#" target="_blank" >Read More</a></p>
           </div>
         </div>
-        <div id="main"  role="presentation">
+        <div class="main"  role="presentation">
           <img src="resources/images/information-campus.jpg" alt="campus information">
           <div class="content">
             <h3>Our Campuses</h3>
@@ -66,7 +69,7 @@
             <p><a href="#" target="_blank" >Read More</a></p>
           </div>
         </div>
-        <div id="main"  role="presentation">
+        <div class="main"  role="presentation">
           <img src="resources/images/information-guest-lecture.jpg" alt="guest lecture">
           <div class="content">
             <h3>Our Guest lecture</h3>
@@ -76,6 +79,7 @@
         </div>
       </div>
     </div>
+    <!-- learning/COURSES Sections -->
     <div class="learning" aria-label="learning">
       <div >
         <h1>Start Learning</h1>
@@ -89,53 +93,55 @@
         <a href="#">Marketing</a>
       </div>
       <div id="flex-container">
-            <div id="flex-item" class="Software"  role="presentation">
+            <div class="flex-item" role="presentation">
             <img src="resources/images/course-software.jpg" alt="computer icon">
               <h2>Software engineering</h2>
               <p>COURSES</p>
               <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
-          <div id="flex-item" class="computer"  role="presentation">
+          <div class="flex-item" role="presentation">
             <img src="resources/images/course-computer-art.jpg" alt="computer icon">
             <h2>Computer Art</h2>
             <p>COURSES</p>
             <p>Image & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
-          <div id="flex-item" class="design"  role="presentation">
+          <div class="flex-item" role="presentation">
             <img src="resources/images/course-design.jpg" alt="design icon">
             <h2>Design</h2>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Desgin</p>
           </div>
-          <div id="flex-item" class="data"  role="presentation">
+          <div class="flex-item" role="presentation">
             <img src="resources/images/course-data.jpg" alt="course data">
             <h2>data</h2>
             <p>COURSES</p>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
-          <div id="flex-item" class="business"  role="presentation">
+          <div class="flex-item" role="presentation">
             <img src="resources/images/course-business.jpg" alt="course-business">
             <h2>Business</h2>
             <p>COURSES</p>
             <p>Product Development, Business Development, Startup</p>
           </div>
-          <div id="flex-item" class="marketing"  role="presentation">
+          <div class="flex-item" role="presentation">
             <img src="resources/images/course-marketing.jpg" alt="course-marketing">
             <h2>Marketing</h2>
             <p>COURSES</p>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
-
     </div>
+      <!--  Thesis Section  -->
     <div class="thesis"  role="presentation">
       <div>
         <h2>Thesis exhibit</h2>
       </div>
-      <video class="mob-video"src="resources/videos/thesis.mp4" width="100%" height="auto" type="mp4/video" controls>Your browser does not support the video tag.</video>
+      <div class="mob-video" >
+        <video  src="resources/videos/thesis.mp4"  controls>Your browser does not support the video tag.</video>
+      </div>
       <div id="thesis"  role="presentation">
         <div class="thesis-main"  role="presentation">
-          <video src="resources/videos/thesis.mp4" width="100%" height="auto" type="mp4/video" controls>Your browser does not support the video tag.</video>
+          <video src="resources/videos/thesis.mp4" controls>Your browser does not support the video tag.</video>
           <h2>Reimagine urban</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquem et commodo lectus, nec consequat neque. Sed non accumsen urna. Phasellus sed consequat ex. Etiam eget magna laoreet, effictur dolor consequat, tristique ligula."</p>
         </div>
@@ -157,7 +163,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Footer Section -->
     <footer>
       <div class="copy-right">
         <p>© Colmar Academy. All rights reserved</p>

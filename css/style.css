@@ -1,8 +1,10 @@
+/* General body section */
 body ,  html{
   font-size: 16px;
   background: whitesmoke;
   font-family: 'Roboto', sans-serif;
 }
+/* Header Section */
 header {
   display: flex;
   justify-content:space-between ;
@@ -18,8 +20,6 @@ header {
   position: absolute;
   top: 1rem;
   left: 4.5rem;
-  /* padding-bottom: 1rem; */
-  /* margin-bottom: 1rem; */
 }
 .light{
   position: absolute;
@@ -28,15 +28,13 @@ header {
   font-size: 2rem;
   font-weight: 300;
   color: lightgray;
-  /* padding-bottom: 2rem; */
-  /* margin-bottom: 2rem; */
 }
 
-header  nav li{
+header   li{
   display: inline-block;
   padding: 1rem;
   }
-header  nav ul li a{
+header  ul li a{
   color: black;
   text-decoration: none;
 }
@@ -49,7 +47,7 @@ header  nav ul li a{
   font-weight: 900;
 }
 @media only screen and (min-width:480px) {
-
+/* Banner Section */
 .banner{
   margin-top: 0;
   background: lightgrey;
@@ -96,7 +94,7 @@ header  nav ul li a{
   margin:0 1.7em;
 
 }
-
+/* Main Section */
 .info-main{
   flex-basis:60%;
   padding-left: 1rem;
@@ -121,23 +119,21 @@ header  nav ul li a{
   height:auto;
   padding-top: 2em;
 }
-#main img{
+.main img{
   width:35%;
   height: auto;
   padding-left: 1em;
 }
-#main{
+.main{
   background: lightgrey;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 200px;
-  /* padding:1rem 0.8rem; */
   margin: 0.075rem;
   border: 4.5px;
   border-color: black;
-  /* line-height: 2.75rem; */
 }
 .content{
   display: flex;
@@ -162,6 +158,7 @@ header  nav ul li a{
   color: blue;
 }
 }
+/* Learning/COURSES Section */
 .learning{
   background: lightgray;
 }
@@ -185,32 +182,32 @@ header  nav ul li a{
   align-items: center;
 
 }
-#flex-item{
+.flex-item{
   width:300px;
   background: whitesmoke;
   color:black;
   align-items: center;
   margin: 1rem;
 }
-#flex-item img{
+.flex-item img{
     width:100%;
     height: auto;
     padding-bottom: 8px;
 }
 
-#flex-item h2{
+.flex-item h2{
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
   padding: 8px 16px;
   padding: 8px 16px;
 }
-#flex-item p{
+.flex-item p{
 text-align: left;
 padding: 8px 16px;
 color: gray;
 }
-
+/* Thesis Section */
 .thesis h2{
   font-size: 2rem;
   font-weight: bold;
@@ -227,7 +224,11 @@ color: gray;
 .thesis-main{
   flex-basis:  60%;
   padding: 1rem;
-
+  overflow: hidden;
+}
+.thesis-main video{
+  width: 100%;
+  height: auto;
 }
 .thesis-main h2,p{
   float: left;
@@ -272,6 +273,7 @@ color: gray;
   padding-left: 1.5rem;
   font-weight: lighter;
 }
+/*  Footer Section*/
 footer{
   display: flex;
   width: 100%;
@@ -284,7 +286,7 @@ footer{
   float: right;
   font-weight: lighter;
   font-size: 0.5rem;
-  justify-content: space-space-between;
+  justify-content: space-between;
 }
 .fab{
     color: #000;
@@ -324,7 +326,6 @@ footer{
 .image-content img{
   width: 100%;
   height: auto;
-  /* padding-left: 1em; */
 }
 .banner-content h1{
   font-weight: bold;
@@ -356,11 +357,6 @@ footer{
 .info-main{
   display: none;
 }
-/* .flex-container{
-  background: yellow;
-  display: flex;
-  flex-direction: column;
-} */
 .addl-info{
   display: flex;
   flex-flow: column wrap;
@@ -369,31 +365,23 @@ footer{
   margin: 0.1rem;
   padding: 0.5rem;
 }
-#main{
-  /* background: red; */
+.main{
   display: flex;
   flex-flow: column wrap ;
   justify-content: flex-start;
- align-items: flex-start;
- width:100%;
- /* padding:0rem 0.5rem;
- margin: 0.5rem 0rem; */
-}
-#main img{
+  align-items: flex-start;
+  width:100%;
+ }
+.main img{
   width:100% ;
   height: 15rem ;
-  /* padding:0.5rem 0rem; */
-  /* margin: 0.5rem 0rem; */
 }
  .content{
-   /* background: green; */
   display: flex;
   flex-flow: column ;
   align-items: flex-start;
-  /* justify-content:space-around; */
   padding:1rem 1rem;
   line-height: 0.5rem;
-  /* margin: 0.5rem; */
 }
 .content h3{
   font-size: 2rem;
@@ -407,9 +395,13 @@ footer{
   width:100%;
 }
 .mob-video{
-  width:100%
+  width:100%;
   height:auto;
   margin: 0.25rem;
+  overflow: hidden;
+}
+.mob-video video{
+  width: 100%;
 }
 #thesis{
   display: none;
@@ -422,8 +414,6 @@ footer{
 .mobile-nav1 {
   display:flex;
   flex-flow: column;
-  /* justify-content: center; */
-  align-items: left;
   background: whitesmoke;
 }
 .mobile-nav1 a{
@@ -434,16 +424,10 @@ footer{
   background-color: lightgrey;
   margin:0.5rem;
 }
-
-
-
 }
-
 /*for bigger screen*/
   @media only screen and (min-width:480px){
   .mobile-nav,.mobile-nav1, .mob-video{
    display: none;
  }
-
-
  }
